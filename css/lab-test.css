@@ -1,0 +1,72 @@
+/* body {
+    width: 60%;
+    margin: 0 auto;
+}
+*/
+
+.required {
+    color: red;
+} 
+
+.container {
+    width: 100%;
+}
+
+.form {
+    width: 50%;
+    height: auto;
+    float: left;
+}
+
+.image {
+    margin-left: 50%;
+    height: auto;
+    position: fixed;
+}
+
+#my-form {
+    margin-left: 2px;
+    text-align: left;
+    padding-left: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+label,
+input {
+    display: block;
+    border-spacing: 10px;
+    /* flex-direction: column; */
+}
+
+label {
+    color: grey;
+}
+
+input {
+    border: 1px solid black;
+    float: left;
+    margin: 0;
+    padding: 1;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+button{
+    background-color: blueviolet;
+    color:whitesmoke;
+    float: right;
+    margin-right: 5%!important;
+}
+
+.set-float{
+    float: left;
+    padding: 6px;
+}
+
+.label-styling{
+    padding-left: 18px;
+    top: -2px;
+    position: relative;
+}

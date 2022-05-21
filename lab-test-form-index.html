@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Test</title>
+    <link rel="stylesheet" href="css/lab-test.css">
+    <link rel="stylesheet" href="css/external/normalize.css">
+
+    <script type="text/javascript" language="JavaScript">
+        function checkCheckBoxes(myForm) {
+            if (
+                myForm.name1.checked == false &&
+                myForm.name2.checked == false &&
+                myForm.name3.checked == false &&
+                myForm.name4.checked == false &&
+                myForm.name5.checked == false) {
+                alert('Check atleast one box without fail');
+                return false;
+            } else {
+                return true;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form">
+            <form id="my-form" action="#" onsubmit="return checkCheckBoxes(this);">
+                <section>
+                    <div class="set-float">
+                        <h3>1. Your Contact Details</h3>
+                    </div>
+                </section>
+                <section>
+                    <div class="set-float">
+                        <label for="fullName">Full Name<span class="required">*</span></label>
+                        <input id="fullName" type="text" value="" required name="fullName" minlength="5" maxlength="50"
+                            pattern="[a-zA-Z'-'\s]*">
+                    </div>
+
+                    <div class="set-float">
+                        <label for="patientId">Patient Id if exists<span class="required">*</span></label>
+                        <input id="patientId" type="number" value="" required name="patientId">
+                    </div>
+                </section>
+
+                <section>
+                    <div class="set-float">
+                        <label for="contactNumber">Contact Number<span class="required">*</span></label>
+                        <input id="contactNumber" type="text" required value="" name="contactNumber" minlength="10"
+                            maxlength="12" pattern="[7-9]{1}[0-9]{9}">
+                    </div>
+
+                    <div class="set-float">
+                        <label for="emailId">Email id<span class="required">*</span></label>
+                        <input id="emailId" type="email" value="" required name="emailId">
+                    </div>
+                </section>
+
+                <section>
+                    <div class="set-float">
+                        <h3>2. Address</h3>
+                    </div>
+                </section>
+                <section>
+                    <div class="set-float">
+                        <label for="hNumber">H-No<span class="required">*</span></label>
+                        <input id="hNumber" type="text" required value="" name="hNumber">
+                    </div>
+
+                    <div class="set-float">
+                        <label for="street">Street<span class="required">*</span></label>
+                        <input id="street" type="text" value="" required name="street">
+                    </div>
+                </section>
+
+                <section>
+                    <div class="set-float">
+                        <label for="area">Area<span class="required">*</span></label>
+                        <input id="area" type="text" value="" required name="area">
+                    </div>
+                </section>
+                <section>
+                    <div class="set-float">
+                        <b>District</b><span class="required">*</span></h4>
+                    </div>
+                </section>
+                <section>
+                    <div class="set-float">
+                        <select type="text" id="district">
+                            <option value="">Choose</option>
+                            <option value="Bangalore Urban">Bangalore Urban</option>
+                            <option value="Bangalore Rural">Bangalore Rural</option>
+                            <option value="Bangalore Ramnagar">Ramnagar</option>
+                        </select>
+                    </div>
+                </section>
+                <section>
+                    <div class="set-float">
+                        <h3>3. Choose The Test Type</h3>
+                    </div>
+                </section>
+                <section>
+                    <div>
+                        <input type="checkbox" id="id1" name="name1" value="CBC">
+                        <label class="label-styling" for="id1">CBC</label>
+                        <input type="checkbox" id="id2" name="name2" value="Complete Urine">
+                        <label class="label-styling" for="id2">Complete Urine</label>
+                        <input type="checkbox" id="id3" name="name3" value="Lipid Profile">
+                        <label class="label-styling" for="id3">Lipid Profile</label>
+                        <input type="checkbox" id="id4" name="name4" value="Thyroid Stimulating Hormone(TSH)">
+                        <label class="label-styling" for="id4">Thyroid Stimulating Hormone(TSH)</label>
+                        <input type="checkbox" id="id5" name="name5" value="Glucose Test">
+                        <label class="label-styling" for="id5">Glucose Test</label>
+                    </div>
+                </section>
+                <section>
+                    <div style="float:left">
+                        <h3>4. Do you want a hard copy of report also?<span class="required">*</span></h3>
+                    </div>
+                </section>
+                <section>
+                    <div id="Question2">
+                        <input type="radio" id="rd1" name="name11" value="Yes">
+                        <label class="label-styling" for="rd1">Yes</label>
+                        <input type="radio" id="rd2" name="name11" value="No">
+                        <label class="label-styling" for="rd2">No</label>
+                    </div>
+                </section>
+                <section>
+                    <div class="set-float">
+                        <h3>5. Select your comfortable date and time<span class="required">*</span></h3>
+                    </div>
+                </section>
+                <section>
+                    <input type="datetime-local" required id="date-time">
+                </section>
+                <section>
+                    <br>
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                    <br>
+
+                </section>
+            </form>
+
+        </div>
+        <div class="image">
+            <img src="images/Lab-Test/lab-test.jpg">
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+* {
+    /* width setting will include space for border and padding areas */
+    box-sizing: border-box;
+}
+
+main {
+    width: 95%;
+    /* auto -> distribute the extra 5% space as left and right margins */
+    margin: 0 auto;
+}
+
+main section {
+    overflow: auto;
+    margin-bottom: 2em;
+}
+
+.pharmacy-item {
+    float: left;
+    position: -webkit-sticky;
+    width: 23%;
+    height: 200px;
+    margin: 1em 1%;
+    overflow-y: hidden;
+    border: 2px solid steelblue;
+    border-radius: 5px;
+}
+
+.pharmacy-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px
+}
+
+.pharmacy-item-image {
+    display: block;
+    width: 100%;
+    max-height: 50%;
+    border-radius: 5px;
+}
+
+.pharmacy-item-title {
+    position: -webkit-sticky;
+    top: 10px;
+    padding: 0.1em;
+    text-align: left;
+    color: lightskyblue;
+    font-weight: bold;
+}
+
+.add-to-cart-button button {
+    position: -webkit-sticky;
+    color: yellow;
+    background-color: lightsteelblue;
+    width: 100%;
+    max-height: 10%;
+    border: 2px solid blueviolet;
+    border-radius: 0.5ch;
+    font: bold;
+    font-size: larger;
+
+}
+
+.add-to-cart-button button:active,
+.add-to-cart-button button:focus {
+    border: 2px solid rgb(0, 255, 76);
+    background-color: rgb(250, 234, 230);
+}
